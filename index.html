@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capadent – Ağız ve Diş Sağlığı Kliniği</title>
+<meta name="description" content="Capadent: modern teknoloji, nazik yaklaşım ve uzman kadroyla diş sağlığınız için kapsamlı bakım.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Tooth symbol reused across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tooth" viewBox="0 0 32 36"><path d="M16 5.5C13.5 3 9 2 6 4.2 2.7 6.7 2.6 11 4 15c1.200 3.400 1.800 6.200 2.400 10 .5 3 1.300 6.500 3.400 6.500 2.600 0 2.300-6 3.300-9 .5-1.500 1.600-2.500 2.900-2.500s2.400 1 2.900 2.500c1 3 .7 9 3.300 9 2.100 0 2.900-3.500 3.400-6.500.6-3.800 1.200-6.600 2.400-10 1.400-4 1.300-8.300-2-10.800C23 2 18.500 3 16 5.500z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.900 6 6.600.9-4.800 4.600 1.200 6.500L12 17.300 6.100 20.500l1.200-6.500L2.500 9.400l6.600-.9z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="Capadent ana sayfa">
+      <svg class="brand-mark" aria-hidden="true"><use href="#tooth"/></svg>
+      <span>Capadent</span>
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Ana menü">
+      <a href="#top">Ana Sayfa</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#ekip">Ekibimiz</a>
+      <a href="#yorumlar">Yorumlar</a>
+      <a href="#iletisim">İletişim</a>
+      <a class="btn btn-primary nav-cta-mobile" href="#randevu">Randevu Al <svg><use href="#arrow"/></svg></a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#randevu">Randevu Al <svg><use href="#arrow"/></svg></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="assets/img/hero.jpg" alt="" onerror="this.remove()"></div>
+  <div class="container hero-inner">
+    <span class="chip chip-dark"><svg><use href="#tooth"/></svg> Güvenilir diş bakımı</span>
+    <h1>Sağlıklı Bir Gülüşün Başlangıcı <em>Burada</em></h1>
+    <p class="lead">Modern tedaviler, nazik bir yaklaşım ve gülüşünüzü sağlıklı ve özgüvenli tutmaya odaklanmış bir ekiple size özel diş bakımı.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#hizmetler">Tedavileri Keşfet <svg><use href="#arrow"/></svg></a>
+      <div class="rating">
+        <div class="avatars" aria-hidden="true"><i>AY</i><i>MK</i><i>ZD</i></div>
+        <div>
+          <strong>4,9/5 <svg class="star"><use href="#star"/></svg></strong>
+          <span>2500’den fazla memnun hasta</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="hakkimizda">
+  <div class="container about">
+    <div class="about-media ph">
+      <img src="assets/img/about.jpg" alt="Hekim ve hasta muayene sırasında" onerror="this.remove()">
+      <div class="quote-card">
+        <p>Her hasta için güvenli, konforlu ve güvenilir diş bakımı sunuyoruz.</p>
+        <a href="#randevu">Daha fazla bilgi</a>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="chip"><svg><use href="#tooth"/></svg> Hakkımızda</span>
+      <h2>Uzmanlık ve Şefkatle Gülüşünüze Özen Gösteriyoruz</h2>
+      <p class="muted">Sağlıklı bir gülüşün genel sağlığın temeli olduğuna inanıyoruz. Kliniğimiz modern diş hekimliği teknolojisiyle donatılmıştır.</p>
+      <blockquote>“Her yaştan hastaya samimi bir ortamda yüksek kaliteli diş bakımı sunmaya kendimizi adadık.”</blockquote>
+      <div class="feature">
+        <svg class="feature-ico"><use href="#tooth"/></svg>
+        <div><h3>Uygun Fiyat</h3><p class="muted">Şeffaf ve bütçeye dost tedavi seçenekleri.</p></div>
+      </div>
+      <div class="about-foot">
+        <a class="btn btn-primary" href="#ekip">Bizi Tanıyın <svg><use href="#arrow"/></svg></a>
+        <div class="avatars" aria-hidden="true"><i>AY</i><i>MK</i><i>ZD</i></div>
+        <div><h3>Başarılı Tedaviler</h3><p class="muted">Kanıtlanmış sonuçlarla kaliteli bakım</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section-tint" id="hizmetler">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="chip"><svg><use href="#tooth"/></svg> Hizmetlerimiz</span>
+        <h2>Sağlıklı ve Özgüvenli Bir Gülüşe Ulaşmanıza Yardımcı Oluyoruz</h2>
+      </div>
+      <a class="btn btn-primary" href="#randevu">Tüm Hizmetler <svg><use href="#arrow"/></svg></a>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Genel Diş Bakımı</h3>
+        <p class="muted">Her yaş için rutin kontrol, diş temizliği ve koruyucu bakım.</p>
+        <div class="card-img ph g1"><img src="assets/img/service-1.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+      <article class="card">
+        <h3>Estetik Diş Hekimliği</h3>
+        <p class="muted">Diş beyazlatma, lamine yaprak porselen ve gülüş tasarımı.</p>
+        <div class="card-img ph g2"><img src="assets/img/service-2.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+      <article class="card">
+        <h3>Ortodonti</h3>
+        <p class="muted">Tel ve şeffaf plak tedavileriyle dişlerinizi düzgün hizaya getiriyoruz.</p>
+        <div class="card-img ph g3"><img src="assets/img/service-3.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+      <article class="card">
+        <h3>İmplant Tedavisi</h3>
+        <p class="muted">Eksik dişler için kalıcı, doğal görünümlü ve sağlam çözümler.</p>
+        <div class="card-img ph g2"><img src="assets/img/service-4.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+      <article class="card">
+        <h3>Kanal Tedavisi</h3>
+        <p class="muted">Ağrısız ve kontrollü işlemlerle dişinizi çekmeden kurtarıyoruz.</p>
+        <div class="card-img ph g3"><img src="assets/img/service-5.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+      <article class="card">
+        <h3>Çocuk Diş Hekimliği</h3>
+        <p class="muted">Küçük hastalarımız için oyunla başlayan, korkusuz bir diş hekimi deneyimi.</p>
+        <div class="card-img ph g1"><img src="assets/img/service-6.jpg" alt="" onerror="this.remove()"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="container why">
+    <div>
+      <span class="chip"><svg><use href="#tooth"/></svg> Neden Biz</span>
+      <h2>Sağlıklı Bir Gülüş İçin Güvenebileceğiniz Uzman Bakım</h2>
+      <p class="muted">Gülüşünüzü modern teknolojiyle sağlıklı ve özgüvenli tutmak için güvenilir ve ileri çözümler sunuyoruz.</p>
+      <div class="why-cards">
+        <div class="mini-card">
+          <svg class="feature-ico"><use href="#tooth"/></svg>
+          <h3>Tedavide İleri Teknoloji</h3>
+          <p class="muted">Dijital röntgen ve 3D görüntüleme ile hızlı, doğru teşhis.</p>
+        </div>
+        <div class="mini-card">
+          <svg class="feature-ico"><use href="#tooth"/></svg>
+          <h3>Nazik ve Ağrısız İşlemler</h3>
+          <p class="muted">Konforunuzu önceleyen, rahat bir tedavi süreci.</p>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="#randevu">Detaylı Bilgi <svg><use href="#arrow"/></svg></a>
+    </div>
+    <div class="why-media">
+      <div class="why-panel"></div>
+      <img src="assets/img/doctor.png" alt="Capadent hekimi" onerror="this.remove()">
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO + STATS -->
+<section class="video">
+  <div class="video-bg"><img src="assets/img/video.jpg" alt="" onerror="this.remove()"></div>
+  <div class="container video-inner">
+    <button class="play" aria-label="Tanıtım videosunu izle">
+      <svg class="play-ring" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+        <text><textPath href="#circ">Videomuzu İzleyin * Videomuzu İzleyin *</textPath></text>
+      </svg>
+      <svg class="play-tri" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg>
+    </button>
+    <h2>Gelişmiş Diş Bakımını Daha Önce Hiç Olmadığı Gibi Deneyimleyin</h2>
+  </div>
+  <div class="stats">
+    <div class="container stats-grid">
+      <div><strong>15+</strong><span>Yıllık deneyim</span></div>
+      <div><strong>2.500+</strong><span>Memnun hasta</span></div>
+      <div><strong>8</strong><span>Uzman hekim</span></div>
+      <div><strong>%98</strong><span>Tavsiye oranı</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" id="ekip">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="chip"><svg><use href="#tooth"/></svg> Ekibimiz</span>
+        <h2>Gülüşünüzle İlgilenen Uzman Hekimler</h2>
+      </div>
+    </div>
+    <div class="team">
+      <article class="member"><div class="member-img ph g1"><img src="assets/img/team-1.jpg" alt="" onerror="this.remove()"></div><h3>Dr. Ad Soyad</h3><p class="muted">Baş Hekim · İmplantoloji</p></article>
+      <article class="member"><div class="member-img ph g2"><img src="assets/img/team-2.jpg" alt="" onerror="this.remove()"></div><h3>Dr. Ad Soyad</h3><p class="muted">Ortodonti Uzmanı</p></article>
+      <article class="member"><div class="member-img ph g3"><img src="assets/img/team-3.jpg" alt="" onerror="this.remove()"></div><h3>Dr. Ad Soyad</h3><p class="muted">Estetik Diş Hekimi</p></article>
+      <article class="member"><div class="member-img ph g1"><img src="assets/img/team-4.jpg" alt="" onerror="this.remove()"></div><h3>Dr. Ad Soyad</h3><p class="muted">Pedodonti Uzmanı</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-tint" id="yorumlar">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="chip"><svg><use href="#tooth"/></svg> Hasta Yorumları</span>
+        <h2>Hastalarımız Capadent Deneyimini Anlatıyor</h2>
+      </div>
+    </div>
+    <div class="cards">
+      <figure class="card review">
+        <div class="stars" aria-label="5 üzerinden 5 yıldız"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <blockquote>“Diş hekimi korkum vardı, ama ekip beni o kadar rahat ettirdi ki hiçbir şey hissetmedim. Teşekkürler Capadent.”</blockquote>
+        <figcaption><i>AY</i> Ayşe Y.</figcaption>
+      </figure>
+      <figure class="card review">
+        <div class="stars" aria-label="5 üzerinden 5 yıldız"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <blockquote>“Tedavi planı baştan sona açıkça anlatıldı, fiyat sürprizi yaşamadım. İmplant sonucum çok doğal.”</blockquote>
+        <figcaption><i>MK</i> Mehmet K.</figcaption>
+      </figure>
+      <figure class="card review">
+        <div class="stars" aria-label="5 üzerinden 5 yıldız"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <blockquote>“Çocuğumuz her kontrole sevinerek gidiyor. Çocuklarla ilgilenme şekilleri harika.”</blockquote>
+        <figcaption><i>ZD</i> Zeynep D.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="section" id="randevu">
+  <div class="container appt">
+    <div>
+      <span class="chip"><svg><use href="#tooth"/></svg> Randevu</span>
+      <h2>Size Uygun Bir Zamanda Randevunuzu Ayarlayalım</h2>
+      <p class="muted">Formu doldurun, ekibimiz aynı gün içinde sizi arayıp randevuyu onaylasın.</p>
+    </div>
+    <form class="form" id="appt-form" novalidate>
+      <label>Ad soyad<input name="name" autocomplete="name" required></label>
+      <label>Telefon<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Hizmet
+        <select name="service">
+          <option>Genel kontrol</option><option>Diş beyazlatma</option><option>Ortodonti</option>
+          <option>İmplant</option><option>Kanal tedavisi</option><option>Çocuk diş hekimliği</option>
+        </select>
+      </label>
+      <label>Tercih ettiğiniz tarih<input name="date" type="date"></label>
+      <button class="btn btn-primary" type="submit">Randevu Talep Et <svg><use href="#arrow"/></svg></button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" id="iletisim">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="#top"><svg class="brand-mark" aria-hidden="true"><use href="#tooth"/></svg><span>Capadent</span></a>
+      <p>Modern teknoloji ve nazik bir yaklaşımla ağız ve diş sağlığınız için yanınızdayız.</p>
+    </div>
+    <div>
+      <h3>Sayfalar</h3>
+      <a href="#hakkimizda">Hakkımızda</a><a href="#hizmetler">Hizmetler</a><a href="#ekip">Ekibimiz</a><a href="#yorumlar">Yorumlar</a>
+    </div>
+    <div>
+      <h3>İletişim</h3>
+      <a href="tel:+900000000000">+90 000 000 00 00</a>
+      <a href="mailto:info@capadent.com">info@capadent.com</a>
+      <span>Adres bilgisi buraya gelecek</span>
+    </div>
+    <div>
+      <h3>Çalışma saatleri</h3>
+      <span>Pazartesi – Cuma: 09.00 – 19.00</span>
+      <span>Cumartesi: 09.00 – 16.00</span>
+      <span>Pazar: Kapalı</span>
+    </div>
+  </div>
+  <div class="container copy">© <span id="year">2026</span> Capadent. Tüm hakları saklıdır.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
